@@ -1,1 +1,1 @@
-# Ecommerce webisite in Django Full stack
+# Ecommerce website in Django Full stack
