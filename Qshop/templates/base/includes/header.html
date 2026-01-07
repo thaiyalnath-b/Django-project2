@@ -1,24 +1,27 @@
 <header>
-    <nav class="navbar navbar-expand-lg bg-dark" data-bs-theme="dark">
+    <nav class="navbar fixed-top navbar-expand-lg">
         <div class="container-fluid">
-            <a class="navbar-brand" href="">Navbar</a>
+            <a class="navbar-brand" href="">MoonLub</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                 aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
+                <ul class="navbar-nav m-auto mb-2 mb-lg-0">
+                    <li class="nav-item mx-3">
                         <a class="nav-link {% if current_page == 'home' %} active {% endif %}" aria-current="page" href="{% url 'home_page' %}">Home</a>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-item mx-3">
+                        <a class="nav-link {% if current_page == 'products' %} active {% endif %}" aria-current="page" href="{% url 'products' %}">Products</a>
+                    </li>
+                    <li class="nav-item mx-3">
                         <a class="nav-link {% if current_page == 'about' %} active {% endif %}" href="{% url 'about_page' %}">About</a>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-item mx-3">
                         <a class="nav-link {% if current_page == 'contact' %} active {% endif %}" href="{% url 'contact_page' %}">Contact</a>
                     </li>
-                    <li class="nav-item dropdown">
+                    <li class="nav-item mx-3 dropdown">
                         <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
                             aria-expanded="false">
                             Dropdown
@@ -32,7 +35,7 @@
                             <li><a class="dropdown-item" href="#">Something else here</a></li>
                         </ul>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-item mx-3">
                         <a class="nav-link disabled" aria-disabled="true">Disabled</a>
                     </li>
                 </ul>
