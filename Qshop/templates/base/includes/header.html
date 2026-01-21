@@ -1,7 +1,11 @@
+{% load static %}
 <header>
     <nav class="navbar fixed-top navbar-expand-lg">
         <div class="container-fluid">
-            <a class="navbar-brand" href="">MoonLub</a>
+            <div>
+                <img src="{% static 'images/MoonLub2.ico' %}" alt="" class="img"> &nbsp;
+                <a class="navbar-brand" href="">MoonLub</a>
+            </div>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                 aria-label="Toggle navigation">
@@ -24,7 +28,7 @@
                     <li class="nav-item mx-3 dropdown">
                         <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
                             aria-expanded="false">
-                            Dropdown
+                            Manage
                         </a>
                         <ul class="dropdown-menu">
                             <li><a class="dropdown-item {% if current_page == 'products' %} active {% endif %}"
@@ -40,8 +44,9 @@
                         <a class="nav-link disabled" aria-disabled="true">Disabled</a>
                     </li>
                 </ul>
-                <form class="d-flex" role="search">
-                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
+                <form class="d-flex" role="search" method="get" , action="{% url 'search_products' %}">
+                    <input name="query_text" value="{{query}}" class="form-control me-2" type="search"
+                        placeholder="Search" aria-label="Search" />
                     <button class="btn btn-outline-success" type="submit">Search</button>
                 </form>
             </div>

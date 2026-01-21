@@ -5,12 +5,12 @@ Products
 {% endblock %}
 
 {% block content %}
-<section id="products-container">
-    <div class="row g-4 px-5 py-3 m-0">
-        {% for product in products %}
-        <!-- Products Card -->
-        {% include 'products/includes/productCard.html' %}
-        {% endfor %}
+<section class="d-flex justify-content-center align-items-center mt-4 crud">
+    <a href="{% url 'add_product' %}" class="btn">Add Product</a>
+</section>
+<section>
+    <div>
+        {% include 'products/includes/productsSection.html' %}
     </div>
 </section>
 {% endblock %}

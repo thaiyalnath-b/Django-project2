@@ -6,11 +6,17 @@
 
 body {
     padding: 78px 0 0 0;
+    font-family: 'Inter', sans-serif;
+    background-color: #ededef;
 }
 
 .navbar {
     background-color: rgb(243, 241, 241);
     box-shadow: 0 6px 6px -1px rgba(0, 0, 0, 0.25);
+
+    .img {
+        width: 3rem;
+    }
 
     .navbar-brand {
         font-family: 'Poppins', sansserif;
@@ -19,6 +25,7 @@ body {
         font-size: 2.2rem;
         letter-spacing: 1.5px;
         color: #1e293b;
+
     }
 
     .nav-link {
@@ -63,9 +70,23 @@ body {
         overflow: hidden;
         transition: 0.5s ease;
 
-        .btn {
+        a {
+            text-decoration: none;
+            color: #171717;
+        }
+
+        .btns {
             background-color: #020617;
             color: white;
+        }
+
+        .btnss {
+            color: red;
+            font-weight: 900;
+        }
+
+        .card-text {
+            height: 60px;
         }
 
         .card-price {
@@ -105,14 +126,102 @@ body {
     }
 }
 
+/* Search Results */
+.schres {
+    padding: 31px 0 0 25px;
+    font-size: 30px;
+    color: #424242;
+
+    span {
+        font-size: 35px;
+        color: #242323
+    }
+}
+
+/* CRUD Operations */
+.crud {
+    .btn {
+        background-color: #030a29;
+        color: white;
+    }
+}
+
+.addform {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    height: 84.4vh;
+    font-size: 16px;
+
+    h3 {
+        margin-top: -10px;
+        color: #030a29;
+        font-size: 40px;
+        padding-bottom: 15px;
+    }
+
+    .adbtn {
+        text-align: center;
+
+        .addbtn {
+            border: none;
+            background-color: #030a29;
+            padding: 5px;
+            color: white;
+            border-radius: 5px;
+        }
+    }
+}
+
+.deleteproduct {
+    height: 84.4vh;
+    text-align: center;
+
+    h2 {
+        font-size: 55px;
+        padding-bottom: 10px;
+        font-family: sans-serif;
+    }
+
+    button {
+        background-color: #ff0000;
+        color: white;
+        padding: 8px;
+        border: none;
+        border-radius: 5px;
+    }
+
+}
+
+/* Product Details */
+.productdetail {
+    margin: 0 50px;
+    align-items: center;
+    justify-content: center;
+    height: 84.4vh;
+
+    .add {
+        background-color: #030a29;
+        color: white;
+    }
+
+    .edit {
+        background-color: #e5ff00;
+        color: white;
+        margin-right: 10px;
+    }
+
+    .delete {
+        background-color: rgb(255, 0, 0);
+        color: white;
+    }
+}
+
+
 /* About Section */
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;800&family=Inter:wght@300;400;600&display=swap');
 
-body {
-    font-family: 'Inter', sans-serif;
-    background: #050507;
-    color: #eee;
-}
 
 .about-hero {
     height: 90vh;
@@ -153,6 +262,7 @@ body {
     margin-top: 15px;
     font-size: 1.2rem;
     opacity: 0.85;
+    color: white;
 }
 
 .about-content {
@@ -202,6 +312,7 @@ body {
     padding: 130px 8%;
     background: linear-gradient(180deg, #050507, #0b0512);
     text-align: center;
+    color: white;
 }
 
 .about-values h2 {
@@ -256,6 +367,7 @@ body {
         radial-gradient(circle at center, rgba(255, 95, 162, 0.5), transparent 60%),
         linear-gradient(135deg, #09010f, #12001a);
     text-align: center;
+    color: white;
 }
 
 .about-cta h2 {
@@ -283,6 +395,7 @@ body {
     box-shadow: 0 0 80px rgba(255, 95, 162, 1);
     transform: scale(1.15);
 }
+
 
 /* Contact Page */
 .contact-hero {
