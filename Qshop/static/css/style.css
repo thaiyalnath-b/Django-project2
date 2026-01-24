@@ -5,43 +5,54 @@
 }
 
 body {
-    padding: 78px 0 0 0;
+    padding: 73px 0 0 0;
     font-family: 'Inter', sans-serif;
     background-color: #ededef;
 }
 
 .navbar {
     background-color: rgb(243, 241, 241);
-    box-shadow: 0 6px 6px -1px rgba(0, 0, 0, 0.25);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.12);
 
     .img {
         width: 3rem;
     }
 
     .navbar-brand {
-        font-family: 'Poppins', sansserif;
+        font-family: 'Poppins', sans-serif;
         font-style: italic;
         font-weight: 700;
         font-size: 2.2rem;
         letter-spacing: 1.5px;
         color: #1e293b;
+        transition: color 0.2s ease;
 
+        &:hover {
+            color: #020617;
+        }
     }
 
     .nav-link {
         font-size: 1.1rem;
         font-weight: 600;
         color: #717171;
+        transition: color 0.2s ease;
+
+        &:hover {
+            color: #020617;
+        }
     }
 
     .btn {
         background-color: rgb(2, 56, 183);
         color: white;
-    }
+        transition: background-color 0.2s ease, transform 0.2s ease;
 
-    .btn:hover {
-        background-color: rgb(1, 37, 120);
-        color: white;
+        &:hover {
+            background-color: rgb(1, 37, 120);
+            color: white;
+            transform: translateY(-1px);
+        }
     }
 }
 
@@ -116,6 +127,7 @@ body {
         opacity: 1;
         transform: translateX(100%);
     }
+
 }
 
 #carouselExample {
